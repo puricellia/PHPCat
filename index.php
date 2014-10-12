@@ -5,8 +5,9 @@
 
   $cat = new cat('Freddles');
   $cat->breed(1);
-  echo "Name: " . $cat->name;
   $cat->getHunger();
   $cat->getHealth();
+
+  echo "Name: " . $cat->name;
   echo "Happiness: " . $cat->getHappiness();
 ?>

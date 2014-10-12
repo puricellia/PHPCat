@@ -11,7 +11,14 @@
     }
 
     function breed($catBreed) {
-      $this->breed = $catBreed;
+      switch ($catBreed) {
+        case "Siamese":
+          return $this->breed = "Siamese";
+          break;
+        case "Bengal":
+          return $this->breed = "Bengal";
+          break;
+      }
     }
 
     public function getHunger() {
