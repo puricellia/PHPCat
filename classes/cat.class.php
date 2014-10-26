@@ -1,4 +1,5 @@
 <?php
+
   class cat {
 
     public $name;
