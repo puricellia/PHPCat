@@ -1,13 +1,16 @@
 <?php
-  function __autoload($class_name) {
-    include 'classes/' . $class_name . '.class' . '.php';
-  }
 
-  $cat = new cat('Freddles');
-  $cat->breed(1);
-  $cat->getHunger();
-  $cat->getHealth();
+	require('includes/util.inc.php');
 
-  echo "Name: " . $cat->name;
-  echo "Happiness: " . $cat->getHappiness();
+	$pageTitle = 'Home';
+	include('includes/header.inc.php');
+
+	$cat = new cat('Freddles');
+	$cat->breed(1);
+	$cat->getHunger();
+	$cat->getHealth();
+
+	echo "Name: " . $cat->name;
+	echo "Happiness: " . $cat->getHappiness();
+
 ?>
