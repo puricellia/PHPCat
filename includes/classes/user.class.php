@@ -4,16 +4,19 @@
 		protected $userId = null;
 		protected $username = null;
 		protected $password = null;
-		protected $name = null;
 		protected $email = null;
 		protected $userStatus = null;
 
-		function getUserId() {
-			return $this->userId;
+		function getUsername() {
+			return $this->username;
 		}
 
 		function isAdmin() {
-			return ($this->userStatus == '1');
+			if ($this->userStatus == 1) {
+				return true;
+			} else {
+				return false;
+			}
 		}
 
 	}
