@@ -8,6 +8,7 @@
 
 	session_start();
 	$user = (isset($_SESSION['user'])) ? $_SESSION['user'] : null;
+	$cat = (isset($_SESSION['cat'])) ? $_SESSION['cat'] : null;
 
 	try {
 		$pdo = new PDO('mysql:dbname=phpcat; host=localhost', 'root', '');
