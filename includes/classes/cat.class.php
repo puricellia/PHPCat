@@ -2,35 +2,31 @@
 
   class cat {
 
-    public $name;
-    protected $breed;
-    protected $health;
-    protected $hunger;
+    protected $userId = null;
+    protected $catId = null;
+    public $catName = null;
+    protected $catBreed = null;
+    protected $catHealth = null;
+    protected $catHunger = null;
+    protected $catStatus = null;
 
-    function __construct($animalName) {
-      $this->name = $animalName;
+    function getBreed($catBreed) {
+          return $this->catBreed;
     }
 
-    function breed($catBreed) {
-      switch ($catBreed) {
-        case "Siamese":
-          return $this->breed = "Siamese";
-          break;
-        case "Bengal":
-          return $this->breed = "Bengal";
-          break;
-      }
+    function getCatName() {
+      return $this->catName;
     }
 
     public function getHunger() {
-      return $this->hunger = 100;
+      return $this->catHunger;
     }
 
     public function getHealth() {
-      return $this->health = 100;
+      return $this->catHealth;
     }
 
     function getHappiness() {
-      return ($this->health + $this->hunger) /2;
+      return ($this->catHealth + $this->catHunger) /2;
     }
   }
