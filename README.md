@@ -2,7 +2,7 @@ PHPCat
 ======
 
 **TODO**
-- Make a TODO list
+- Database interaction to create cat.
 
 **BUGS**
-- Fix user name function on index.php
+* All bugs killed
