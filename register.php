@@ -23,7 +23,7 @@
 		$stmt->execute();
 
 			if($stmt->rowCount() > 0) {
-				echo "<pre>Error1</pre>";
+				echo "<pre>This username has already been taken</pre>";
 			} else {
 				$qi = 'INSERT INTO users ( username, password, email ) VALUES ( :username, SHA1(:password), :email )';
 			    $query = $pdo->prepare($qi);
@@ -32,7 +32,7 @@
 			    if($result) {
 			      echo '<pre>Registered</pre>';
 			    } else {
-			      echo '<pre>Error</pre>';
+			      echo '<pre>Error, please try again</pre>';
 			    }
 			}
 
