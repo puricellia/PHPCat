@@ -26,9 +26,13 @@
 		}
 
 		if ($user) {
-			$_SESSION['user'] = $user;
-			header("location:index.php");
-			exit;
+			if($user->getUserStatus() != 2) {
+				$_SESSION['user'] = $user;
+				header("location:index.php");
+				exit;
+			} else {
+				echo '<pre>Banned</pre>';
+			}
 		}
 
 	}
