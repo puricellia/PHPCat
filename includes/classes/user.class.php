@@ -11,6 +11,14 @@
 			return $this->username;
 		}
 
+		function getUserId() {
+			return $this->userId;
+		}
+
+		function getUserStatus() {
+			return $this->userStatus;
+		}
+
 		function isAdmin() {
 			if ($this->userStatus == 1) {
 				return true;
