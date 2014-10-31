@@ -4,10 +4,11 @@
 
 	$form = '
 		<form action="register.php" method="post">
-			<input type="text" name="username">
-			<input type="text" name="email">
-			<input type="password" name="password">
-			<input type="submit" value="Register">
+			<input type="text" name="username" id="usrinp">
+			<input type="text" name="email" id="emainp">
+			<input type="password" name="password" id="pswinp">
+			<input type="password" name="password2" id="psw2inp">
+			<input type="submit" value="Register" id="subinp">
 		</form>
 	';
 
